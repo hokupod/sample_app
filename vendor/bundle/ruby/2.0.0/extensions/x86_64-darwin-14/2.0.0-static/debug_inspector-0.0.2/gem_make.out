@@ -1,0 +1,12 @@
+/Users/hokuto/.rbenv/versions/2.0.0-p247/bin/ruby -r ./siteconf20150910-32070-1b8dco0.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling debug_inspector.c
+linking shared-object debug_inspector.bundle
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 debug_inspector.bundle ./.gem.20150910-32070-171pyc3
+installing default debug_inspector libraries
