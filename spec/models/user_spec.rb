@@ -62,17 +62,17 @@ describe User do
     it { should_not be_valid }
   end
 
-  describe "when passwod in not present" do
+  describe "when password in not present" do
     before do
       @user = User.new(name: "Example User", email: "user@example.com",
                        password: " ", password_confirmation: " ")
     end
-    it { should_not be_valid}
+    it { should_not be_valid }
   end
 
-  describe "when passwod doesn't match confirmation" do
+  describe "when password doesn't match confirmation" do
     before { @user.password_confirmation = "mismatch"}
-    it { should_not be_valid}
+    it { should_not be_valid }
   end
 
   describe "with a password that's too short" do

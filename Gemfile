@@ -18,11 +18,15 @@ group :development, :test do
   gem 'hirb'         # モデルの出力結果を表形式で表示するGem
   gem 'hirb-unicode' # 日本語などマルチバイト文字の出力時の出力結果のずれに対応
   gem 'awesome_print'
+  gem 'rubocop', require: false
+  gem 'better_errors'
+  gem 'binding_of_caller' # その場でデバッグするには必要
 end
 
 group :test do
   gem 'selenium-webdriver', '2.35.1'
   gem 'capybara', '2.1.0'
+  gem 'factory_girl_rails', '4.2.1'
 end
 
 gem 'sass-rails', '4.0.5'
